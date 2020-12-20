@@ -91,7 +91,7 @@ conn, curs = create_connection(db_file, rewrite=True) #rewrite is used to recrea
 db = Database()
 #...............................................................ENTITIES...................................................................
 class Worker(db.Entity):
-#     _table_ = "enrollments"
+#     _table_ = "worker"
     WORKER_ID = PrimaryKey(int)
     FIRST_NAME = Optional(str)
     LAST_NAME = Optional(str)
