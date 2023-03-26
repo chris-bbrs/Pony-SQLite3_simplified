@@ -485,7 +485,7 @@ sql_present('SELECT DEPARTMENT, sum(Salary) from worker group by DEPARTMENT;')
 
 <br />
 
-In this example we can also check out that using the outputted SQL code from the Pony execution inside sql_present weilds the same result
+In this example we can also check out that using the outputted SQL code from the Pony execution inside sql_present yields the same result
 ```python
 select((w.FIRST_NAME, w.SALARY) for w in Worker if w.SALARY == max(w.SALARY for w in Worker)).without_distinct().show()
 
@@ -936,7 +936,7 @@ sql_present('SELECT DEPARTMENT, sum(Salary) from worker group by DEPARTMENT;')
 
 <br />
 
-In this example we can also check out that using the outputted SQL code from the Pony execution inside sql_present weilds the same result
+In this example we can also check out that using the outputted SQL code from the Pony execution inside sql_present yields the same result
 ```python
 select((w.FIRST_NAME, w.SALARY) for w in Worker if w.SALARY == max(w.SALARY for w in Worker)).without_distinct().show()
 
